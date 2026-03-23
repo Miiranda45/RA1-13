@@ -21,7 +21,7 @@ def parseExpressao(linha: str):
         if c.isalpha():
             return estado_comando()
 
-        raise ValueError(f"Erro léxico: caractere inválido '{c}'")
+        raise ValueError(f"Caractere inválido '{c}'")
 
     def estado_numero():
         nonlocal i
@@ -35,7 +35,7 @@ def parseExpressao(linha: str):
                 token += c
             elif c == ".":
                 if tem_ponto:
-                    raise ValueError("Erro léxico: número malformado (dois pontos)")
+                    raise ValueError("Número malformado (dois pontos)")
                 tem_ponto = True
                 token += c
             else:
@@ -44,7 +44,7 @@ def parseExpressao(linha: str):
             i += 1
 
         if token.endswith("."):
-            raise ValueError("Erro léxico: número não pode terminar com ponto")
+            raise ValueError("Número não pode terminar com ponto")
 
         return token
 
@@ -71,7 +71,7 @@ def parseExpressao(linha: str):
         if token in ("RES", "MEM"):
             return token
 
-        raise ValueError(f"Erro léxico: comando inválido '{token}'")
+        raise ValueError(f"Comando inválido '{token}'")
 
     while i < n:
         if linha[i].isspace():
