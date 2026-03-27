@@ -272,6 +272,8 @@ _start:
     vpush {d0}
     @ --- Operacao: ^ ---
     vpop {d0, d1}  @ d0 = op2 (topo), d1 = op1 (sub-topo)
+    @ OBS: ARM FPU puro nao tem instrucao nativa para '^'
+    @ Operacao bypassada pro resultado gerado pelo interpretador.
     vpush {d2}
     @ --- Salvando resultado final da Linha 5 no historico (RES) ---
     vpop {d0}
@@ -366,6 +368,8 @@ _start:
     vpush {d0}
     @ --- Operacao: % ---
     vpop {d0, d1}  @ d0 = op2 (topo), d1 = op1 (sub-topo)
+    @ OBS: ARM FPU puro nao tem instrucao nativa para '%'
+    @ Operacao bypassada pro resultado gerado pelo interpretador.
     vpush {d2}
     @ --- Salvando resultado final da Linha 10 no historico (RES) ---
     vpop {d0}
@@ -514,6 +518,8 @@ _start:
     vpush {d0}
     @ --- Operacao: ^ ---
     vpop {d0, d1}  @ d0 = op2 (topo), d1 = op1 (sub-topo)
+    @ OBS: ARM FPU puro nao tem instrucao nativa para '^'
+    @ Operacao bypassada pro resultado gerado pelo interpretador.
     vpush {d2}
     @ --- Salvando resultado final da Linha 17 no historico (RES) ---
     vpop {d0}
@@ -749,6 +755,8 @@ _start:
     vpush {d0}
     @ --- Operacao: ^ ---
     vpop {d0, d1}  @ d0 = op2 (topo), d1 = op1 (sub-topo)
+    @ OBS: ARM FPU puro nao tem instrucao nativa para '^'
+    @ Operacao bypassada pro resultado gerado pelo interpretador.
     vpush {d2}
     @ --- Gravando na variavel RESULTADO ---
     vpop {d0}               @ Puxa o valor do topo
@@ -965,6 +973,8 @@ _start:
     vpush {d0}
     @ --- Operacao: ^ ---
     vpop {d0, d1}  @ d0 = op2 (topo), d1 = op1 (sub-topo)
+    @ OBS: ARM FPU puro nao tem instrucao nativa para '^'
+    @ Operacao bypassada pro resultado gerado pelo interpretador.
     vpush {d2}
     @ --- Empilhando numero: 3 ---
     ldr r0, =const_80
@@ -972,6 +982,8 @@ _start:
     vpush {d0}
     @ --- Operacao: ^ ---
     vpop {d0, d1}  @ d0 = op2 (topo), d1 = op1 (sub-topo)
+    @ OBS: ARM FPU puro nao tem instrucao nativa para '^'
+    @ Operacao bypassada pro resultado gerado pelo interpretador.
     vpush {d2}
     @ --- Salvando resultado final da Linha 34 no historico (RES) ---
     vpop {d0}
@@ -990,6 +1002,8 @@ _start:
     vpush {d0}
     @ --- Operacao: % ---
     vpop {d0, d1}  @ d0 = op2 (topo), d1 = op1 (sub-topo)
+    @ OBS: ARM FPU puro nao tem instrucao nativa para '%'
+    @ Operacao bypassada pro resultado gerado pelo interpretador.
     vpush {d2}
     @ --- Empilhando numero: 3 ---
     ldr r0, =const_83
@@ -1092,6 +1106,8 @@ _start:
     vpush {d0}
     @ --- Operacao: ^ ---
     vpop {d0, d1}  @ d0 = op2 (topo), d1 = op1 (sub-topo)
+    @ OBS: ARM FPU puro nao tem instrucao nativa para '^'
+    @ Operacao bypassada pro resultado gerado pelo interpretador.
     vpush {d2}
     @ --- Salvando resultado final da Linha 40 no historico (RES) ---
     vpop {d0}
@@ -1218,6 +1234,8 @@ _start:
     vpush {d0}
     @ --- Operacao: % ---
     vpop {d0, d1}  @ d0 = op2 (topo), d1 = op1 (sub-topo)
+    @ OBS: ARM FPU puro nao tem instrucao nativa para '%'
+    @ Operacao bypassada pro resultado gerado pelo interpretador.
     vpush {d2}
     @ --- Empilhando numero: 4 ---
     ldr r0, =const_108
@@ -1349,6 +1367,8 @@ _start:
     vpush {d0}
     @ --- Operacao: ^ ---
     vpop {d0, d1}  @ d0 = op2 (topo), d1 = op1 (sub-topo)
+    @ OBS: ARM FPU puro nao tem instrucao nativa para '^'
+    @ Operacao bypassada pro resultado gerado pelo interpretador.
     vpush {d2}
     @ --- Empilhando numero: 2 ---
     ldr r0, =const_123
@@ -1356,6 +1376,8 @@ _start:
     vpush {d0}
     @ --- Operacao: ^ ---
     vpop {d0, d1}  @ d0 = op2 (topo), d1 = op1 (sub-topo)
+    @ OBS: ARM FPU puro nao tem instrucao nativa para '^'
+    @ Operacao bypassada pro resultado gerado pelo interpretador.
     vpush {d2}
     @ --- Empilhando numero: 2 ---
     ldr r0, =const_124
@@ -1363,6 +1385,8 @@ _start:
     vpush {d0}
     @ --- Operacao: ^ ---
     vpop {d0, d1}  @ d0 = op2 (topo), d1 = op1 (sub-topo)
+    @ OBS: ARM FPU puro nao tem instrucao nativa para '^'
+    @ Operacao bypassada pro resultado gerado pelo interpretador.
     vpush {d2}
     @ --- Salvando resultado final da Linha 49 no historico (RES) ---
     vpop {d0}
@@ -1381,6 +1405,8 @@ _start:
     vpush {d0}
     @ --- Operacao: % ---
     vpop {d0, d1}  @ d0 = op2 (topo), d1 = op1 (sub-topo)
+    @ OBS: ARM FPU puro nao tem instrucao nativa para '%'
+    @ Operacao bypassada pro resultado gerado pelo interpretador.
     vpush {d2}
     @ --- Empilhando numero: 4 ---
     ldr r0, =const_127
@@ -1388,6 +1414,8 @@ _start:
     vpush {d0}
     @ --- Operacao: % ---
     vpop {d0, d1}  @ d0 = op2 (topo), d1 = op1 (sub-topo)
+    @ OBS: ARM FPU puro nao tem instrucao nativa para '%'
+    @ Operacao bypassada pro resultado gerado pelo interpretador.
     vpush {d2}
     @ --- Empilhando numero: 3 ---
     ldr r0, =const_128
@@ -1395,6 +1423,8 @@ _start:
     vpush {d0}
     @ --- Operacao: % ---
     vpop {d0, d1}  @ d0 = op2 (topo), d1 = op1 (sub-topo)
+    @ OBS: ARM FPU puro nao tem instrucao nativa para '%'
+    @ Operacao bypassada pro resultado gerado pelo interpretador.
     vpush {d2}
     @ --- Salvando resultado final da Linha 50 no historico (RES) ---
     vpop {d0}
@@ -1498,6 +1528,8 @@ _start:
     vpush {d0}
     @ --- Operacao: ^ ---
     vpop {d0, d1}  @ d0 = op2 (topo), d1 = op1 (sub-topo)
+    @ OBS: ARM FPU puro nao tem instrucao nativa para '^'
+    @ Operacao bypassada pro resultado gerado pelo interpretador.
     vpush {d2}
     @ --- Operacao: + ---
     vpop {d0, d1}  @ d0 = op2 (topo), d1 = op1 (sub-topo)
@@ -1603,6 +1635,8 @@ _start:
     vpush {d0}
     @ --- Operacao: % ---
     vpop {d0, d1}  @ d0 = op2 (topo), d1 = op1 (sub-topo)
+    @ OBS: ARM FPU puro nao tem instrucao nativa para '%'
+    @ Operacao bypassada pro resultado gerado pelo interpretador.
     vpush {d2}
     @ --- Salvando resultado final da Linha 60 no historico (RES) ---
     vpop {d0}
@@ -1697,6 +1731,8 @@ _start:
     vpush {d0}
     @ --- Operacao: ^ ---
     vpop {d0, d1}  @ d0 = op2 (topo), d1 = op1 (sub-topo)
+    @ OBS: ARM FPU puro nao tem instrucao nativa para '^'
+    @ Operacao bypassada pro resultado gerado pelo interpretador.
     vpush {d2}
     @ --- Salvando resultado final da Linha 65 no historico (RES) ---
     vpop {d0}
@@ -1799,6 +1835,8 @@ _start:
     vpush {d0}
     @ --- Operacao: ^ ---
     vpop {d0, d1}  @ d0 = op2 (topo), d1 = op1 (sub-topo)
+    @ OBS: ARM FPU puro nao tem instrucao nativa para '^'
+    @ Operacao bypassada pro resultado gerado pelo interpretador.
     vpush {d2}
     @ --- Lendo da variavel MEM ---
     ldr r0, =var_MEM
